@@ -1,0 +1,263 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+    
+    <link rel="stylesheet" href="vendor/css/bootstrap.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+	<link rel="stylesheet" href="vendor/font-awesome-4.4.0/css/font-awesome.css">
+    <link rel="stylesheet" href="css/style.css">
+	<!--[if IE]>
+	<link rel="stylesheet" type="text/css" href="css/ie-only.css" />
+	<![endif]-->
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600,700' rel='stylesheet' type='text/css'>
+	<link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+	<link href="http://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+	<script src="vendor/js/bootstrap.min.js"></script>
+	<link href="//vjs.zencdn.net/4.12/video-js.css" rel="stylesheet">
+	<script src="//vjs.zencdn.net/4.12/video.js"></script>
+ 
+   </head>
+   <style type="text/css">
+		.carousel{
+			background: #2f4357;
+			margin-top: 20px;
+		}
+		.carousel .item img{
+			margin: 0 auto; /* Align slide image horizontally center */
+		}
+		.bs-example{
+			margin: 20px;
+		}
+</style>
+   <body>
+   
+    
+ 
+	<nav class="navbar navbar-inverse navbar-fixed-top">
+		
+		  <div class="navbar-header">
+			<a class="navbar-brand" href="/">
+			  <span style="color: #fff; font-size: 24px; border: 2px solid #fd8b87; padding: 2px 4px;
+						font-family: 'Droid Serif', Helvetica Neue, Helvetica, Arial, sans-serif;
+						font-weight: 400;
+						font-size-adjust: 0.488;">SluFootFive</span>
+			</a>
+		  </div>
+		  <div>
+			<ul class="nav navbar-nav">
+				<li><a id='theband' href="#band">Band</a></li>
+				<li><a id='assets' href="#tracks">Tracks</a></li>
+				<li><a href="">Contact</a></li>
+			</ul>
+		  </div>
+	
+	</nav>	   
+	  
+	<div class='intro'>
+	<div class="wrapper"></div>
+	<main class="main jumbotron" style='background: transparent; color: white; margin:40px;position: absolute; top: 20px;'>
+		    <br>
+			<h1 style="font-family: 'Droid Serif', Helvetica Neue, Helvetica, Arial, sans-serif;
+						font-weight: 700;
+						font-size-adjust: 0.488;
+						font-size: 70px;
+						line-height: 64px;
+						max-width: 500px;
+						color: #a83c54;" >SluFootFive</h1>
+		    <h2 style='color: #a83c54'>Tag line for the band</h2>
+			<p style='color: black; width: 40%'>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+		    <br>
+	</main>
+	</div>
+	<section id='tracks'>
+	<div class='container' style='padding-top: 4em'>
+	<div class='row'>
+	<div class='col-md-5'>
+	<h1>Audio Tracks</h1>
+    <div id="accordion" class="panel-group">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h4 class="panel-title">
+                    <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">Track 1. I'm a Believer</a>
+                </h4>
+            </div>
+            <div id="collapseOne" class="panel-collapse collapse in">
+                <div class="panel-body">
+					<img src='images/cover.jpg' style='width: 160px; height: 160px;display: block;margin: 0 auto;margin-bottom: 1em;'\>
+                    <audio id='audio-player' controls="controls" style='display: block;margin: 0 auto;'>
+					  <source src="assets/audio/ImABeliever.mp3" type="audio/mpeg" />
+								Your browser does not support the audio element.
+					</audio> 
+				</div>
+            </div>
+        </div>
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h4 class="panel-title">
+                    <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">Track 2. Daydream Believer</a>
+                </h4>
+            </div>
+            <div id="collapseTwo" class="panel-collapse collapse">
+                <div class="panel-body">
+                    <img src='images/album.jpg' style='width: 160px; height: 160px;display: block;margin: 0 auto;margin-bottom: 1em;'\>
+                    <audio id='audio-player' controls="controls" style='display: block;margin: 0 auto;'>
+					  <source src="assets/audio/DaydreamBeliever.mp3" type="audio/mpeg" />
+								Your browser does not support the audio element.
+					</audio> 
+					</div>
+            </div>
+        </div>
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h4 class="panel-title">
+                    <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree">Track 3. Steppin' Stone</a>
+                </h4>
+            </div>
+            <div id="collapseThree" class="panel-collapse collapse">
+                <div class="panel-body">
+                    <img src='images/album2.jpg' style='width: 160px; height: 160px;display: block;margin: 0 auto;margin-bottom: 1em;'\>
+                    <audio id='audio-player' controls="controls" style='display: block;margin: 0 auto;'>
+					  <source src="assets/audio/SteppingStone.mp3" type="audio/mpeg" />
+								Your browser does not support the audio element.
+					</audio> 
+					</div>
+            </div>
+        </div>
+    </div>
+	</div>
+	<div class='col-md-offset-1 col-md-6 '>
+		<h1>Video Track</h1>
+		 <video class="video-js vjs-default-skin" width="400" height="293" 
+		 controls
+		 poster="images/cover3.jpg"
+		 data-setup='{ "controls": true, "autoplay": false, "preload": "auto" }'>
+			  <source src="assets/video/TheMonkees.mp4" type="video/mp4">
+			  <source src="movie.ogg" type="video/ogg">
+			Your browser does not support the video tag.
+		</video> 
+		<br/><p>See more videos on our <a href='https://www.youtube.com/user/themonkees'>youtube channel</a>
+		</div>
+		</div>
+		</div>
+	</section>
+	<section id='band'>
+		
+	<div class='container' style='padding-top: 5em'>
+	<div class='row'>
+	<h1>Introducing, The Monkees !</h1>
+	<div class='col-md-offset-3 col-md-6'>
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+        <!-- Carousel indicators -->
+        <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+			<li data-target="#myCarousel" data-slide-to="3"></li>
+			<li data-target="#myCarousel" data-slide-to="4"></li>
+        </ol>   
+
+        <!-- Wrapper for carousel items -->
+
+        <div class="carousel-inner">
+            <div class="item active">
+                <img src="images/cover3.jpg" alt="First Slide">
+            </div>
+            <div class="item">
+                <img src="images/pt.jpg" alt="Second Slide">
+				<div class="carousel-caption">
+					<h3>Pete Tork</h3>
+				</div>
+            </div>
+            <div class="item">
+                <img src="images/dj.jpg" alt="Third Slide">
+				<div class="carousel-caption">
+					<h3>Davy Jones</h3>
+				</div>
+            </div>
+			<div class="item">
+                <img src="images/mn.jpg" alt="Fourth Slide">
+				<div class="carousel-caption">
+					<h3>Mike Nesmith</h3>
+				</div>
+            </div>
+			<div class="item">
+                <img src="images/md.jpg" alt="Fifth Slide">
+				<div class="carousel-caption">
+					<h3>Micky Dolenz</h3>
+				</div>
+            </div>
+        </div>
+        <!-- Carousel controls -->
+        <a class="carousel-control left" href="#myCarousel" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left"></span>
+        </a>
+        <a class="carousel-control right" href="#myCarousel" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right"></span>
+        </a>
+    </div>
+	</div>
+	</div>
+	<div class='row'>
+		<div class='col-md-offset-3 col-md-6'>
+		<h3>The Monkees</h3>
+		<p>The Monkees are an American pop/rock band that released music in their original incarnation between 1965 and 1971, with subsequent reunion albums and tours in the decades that followed. Formed in Los Angeles in 1965 by Robert "Bob" Rafelson and Bert Schneider for the American television series The Monkees, which aired from 1966 to 1968, the musical acting quartet was composed of Americans Micky Dolenz, Michael Nesmith, Peter Tork, and Englishman Davy Jones. The band's music was initially supervised by producer Don Kirshner.</p>
+		</div>
+	</div>
+	</div>
+	</section>
+	
+	<div class='fixedFooter'>
+	<footer class="footer" >
+	 	<audio id='footer-audio-player' controls="controls">
+		 <!- <source src="http://www.metadecks.org/software/sweep/audio/demos/beats1.ogg" type="audio/ogg" /> -->
+		  <source src="assets/audio/Clarksville.mp3" type="audio/mpeg" />
+					Your browser does not support the audio element.
+		</audio>
+		<span id='playing'><strong>Playing</strong> : <q>Last Train to Clarkesville</q></span>
+		<div class='icons'>
+			<a href='https://www.facebook.com/TheMonkees'><i class='fa fa-facebook-square'></i></a>
+			<a href='https://twitter.com/MonkeesOfficial'><i class='fa fa-twitter-square'></i></a>
+			<a href='https://www.youtube.com/user/themonkees'><i class='fa fa-youtube-square'></i></a>
+		</div>
+	</footer>
+    </div>
+	<script>
+		
+		$(document).ready(function() {
+			$("#myCarousel").carousel({
+					interval : false
+			});
+			$('#playing').hide();
+			$('#tracks').hide();
+			$('#band').hide();
+			$('audio#footer-audio-player')[0].onplay = function() {
+				$('#playing').show();
+			};
+			$('audio#footer-audio-player')[0].onpause = function() {
+				$('#playing').hide();
+			};
+			$('audio#footer-audio-player')[0].onended = function() {
+				$('#playing').hide();
+			};
+			$('#assets').click(function(){
+				$('.intro').hide();
+				$('#tracks').show();
+				$('#band').hide();
+			});
+			$('#theband').click(function(){
+				$('.intro').hide();
+				$('#tracks').hide();
+				$('#band').show();
+			});
+		});
+	
+	</script>
+</body>
+</html>

@@ -1,0 +1,71 @@
+
+* {
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+html, body {
+	height: 100%;
+}
+body {
+    overflow:hidden;
+}
+.intro { height: 100%}
+.list-inline>li {padding: 10px 10px;}
+
+.list-inline>li a {font-size: large;}
+
+.list-inline > li > a:hover { background-color: lightgrey; text-decoration: none;}
+.list-inline > li > a.active { background-color: #337AB7; color: white;}
+
+.list-inline > li.selected { border-bottom: 1px solid red;}
+.wrapper { 
+  opacity: 0.3;
+  background: url(../images/monkees.jpg) no-repeat top center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.nav {
+	list-style: none;
+}
+
+.nav li {
+	display: inline-block;
+}
+.navbar-inverse { background-color: rgba(0, 0, 0, .6);
+    border-color: rgba(0, 0, 0, .2);
+    font-family: "museo-sans", "Helvetica Neue", Helvetica, Arial, Geneva, sans-serif;
+    }
+.navbar-inverse .navbar-nav > li > a {
+    color: white; font-size: 18px;
+}
+
+.navbar-inverse .navbar-nav > li > a:hover {
+    color: #ff7300;
+}
+
+.navbar { border-radius: 0px; margin-bottom: 0px;}
+.wrapper {
+  min-height: 100%;
+  height: auto !important;
+  height: 100%;
+}
+.fixedFooter {position: fixed; padding:15px; padding-bottom: 8px;bottom: 0px;width: 100%; 
+			background: #fd8b87;overflow:hidden; border-top: 1px solid #000}
+.icons { display: inline;float:right; margin-right: 50px}
+#playing { display: inline-block; margin-left: 20px; font-size: 24px; padding-bottom: 0px; 
+			position: relative; top: -5px; color: #fff}
+.fa-youtube-square { background: #fd8b87; color: #e12a01;font-size: 36px; margin-left: 10px;}
+.fa-twitter-square { background: #fd8b87;color: #58adf0;font-size: 36px; margin-left: 10px;}
+.fa-facebook-square { background: #fd8b87;color: #4463a1;color: blue; font-size: 36px; margin-left: 10px;}
+
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+/* IE10+ CSS styles go here */
+.fixedFooter { padding-top: 0px;padding-bottom: 0px;}
+.fa-facebook-square, .fa-twitter-square, .fa-youtube-square{ padding-top: 5px;font-size: 70px}
+}
